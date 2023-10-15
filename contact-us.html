@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 6 | Contate-nos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="contact-page">
+    <nav>
+        <div>
+            <a href="index.html">ODS 6</a>
+            <a href="contact-us.html">Contato</a>
+        </div>
+    </nav>
+    
+    <h2>Formulário de Contato</h2>
+    <div id="contact-us">
+        <img src="assets/contactus.svg" alt="Contate-nos">
+        <form id="formulario-contato" action="processar_formulario.php" method="post">
+            <label for="nome" class="campo-label">Nome:</label>
+            <input type="text" id="nome" name="nome" class="campo-input" required>
+    
+            <label for="email" class="campo-label">Email:</label>
+            <input type="email" id="email" name="email" class="campo-input" required>
+    
+            <label for="telefone" class="campo-label">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" class="campo-input" required>
+    
+            <label for="assunto" class="campo-label">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" class="campo-input" required>
+    
+            <label for="mensagem" class="campo-label">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" class="campo-textarea" rows="4" required></textarea>
+    
+            <input type="submit" class="botao-enviar" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
