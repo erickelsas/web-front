@@ -233,6 +233,10 @@ footer div a:hover{
     gap: 2rem;
 }
 
+#contact-page h2{
+    margin-top: 15vh;
+}
+
 #contact-us{
     display: flex;
     padding: 2.5%;
