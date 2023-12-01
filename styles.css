@@ -154,7 +154,7 @@ header div p{
     border-radius: 0.25rem;
     background-color: #437C90;
     color: #fff;
-    font-family: 'Gabarito';
+    font-family: 'Gabarito', sans-serif;
 
     margin-top: 0.5rem;
 }
@@ -210,8 +210,15 @@ footer div a:hover{
     border-radius: 4px;
 }
 
-.botao-enviar {
-    background-color: #007BFF;
+.buttons{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem
+}
+
+.botao{
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -219,8 +226,29 @@ footer div a:hover{
     cursor: pointer;
 }
 
+.botao-enviar {
+    background-color: #007BFF;
+}
+
 .botao-enviar:hover {
-    background-color: #0056b3;
+    background-color: #01448b;
+}
+
+.botao-limpar, .botao-exclui{
+    background-color: #e01515;
+}
+
+.botao-exclui{
+    margin-top: 2.5%;
+}
+
+.botao-exclui-uma{
+    width: 20%;
+    align-self: flex-end;
+}
+
+.botao-limpar:hover, .botao-exclui:hover{
+    background-color: #950e0e;
 }
 
 #contact-page{
@@ -229,6 +257,7 @@ footer div a:hover{
     align-items: center;
     flex-direction: column;
 
+    margin-top: 47vh;
     height: 100vh;
     gap: 2rem;
 }
@@ -237,12 +266,108 @@ footer div a:hover{
     margin-top: 15vh;
 }
 
-#contact-us{
+#contact-us, #lista{
     display: flex;
     padding: 2.5%;
+}
+
+#lista{
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact-us img{
     width: 48%;
     margin-right: 2%;
+}
+
+#ans-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 90%;
+    background-color: #ADD5FF;
+    border-radius: 1rem;
+}
+
+#card{
+    width: 95%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    gap: 0.3rem;
+}
+
+#card:last-child{
+    margin-bottom: 2%;
+}
+
+.card-content{
+    width: 100%;
+    padding: 2.5%;
+    border-radius: 0.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    background-color: #fff;
+}
+
+.card-content h3, .card-content h5{
+    font-size: 1.1rem;
+}
+
+.card-content h3>span,
+.card-content h5>span{
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.searchAndDelete{
+    width: 90%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.searchAndDelete div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchAndDelete div button{
+    padding: 4px;
+    background-color: #9ac8f8;
+    cursor: pointer;
+
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+
+    border: solid 1px #202020;
+}
+
+.searchAndDelete div button:hover{
+    background-color: #007BFF;
+    border: solid 1px #202020;
+}
+
+.searchAndDelete div button img{
+    height: 24px;
+    width: 24px;
+}
+
+.searchAndDelete div input[type="text"]{
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    padding: 10px 20px;
+    border: solid 1px #202020;
 }
